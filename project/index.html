@@ -1,0 +1,265 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">     
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.0/css/all.css">      
+    <style>
+        body {
+            padding-top: 56px;
+        }
+        .jumbotron {
+            text-shadow: #000 1px 1px;
+        }
+        .background-header {
+            background-image: url("images/banner2.jpg");
+            background-color: #fafbfc;
+            height: 400px;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            position: relative;
+        }
+        .button-primer {
+            background-color: #00bd8e;
+            border-color: #0b9b6b;
+            color: #fff;
+            text-shadow: 0px 0px;
+            margin-top: 50px; /* Adjust the top margin as needed */
+        }
+        .button-primer:hover {
+            background-color: #038c6a;
+            color: #fff;
+            text-shadow: 0px 0px;
+        }
+        .container-fluid-max {
+            max-width: 1440px;
+        }
+        .service-style {
+            margin-top: 15px;
+            background-color: transparent;
+        }
+        .text-green {
+            color: #0b9b6b;
+        }
+        .bg-red {
+            background-color: #f25757;
+        }
+        h2:before,
+        h2:after {
+            background-color: #0b9b6b;
+            content: "";
+            display: inline-block;
+            height: 1px;
+            position: relative;
+            vertical-align: middle;
+            width: 25%;
+        }
+        h2:before {
+            right: 0.5em;
+            margin-left: -50%;
+        }
+        h2:after {
+            left: 0.5em;
+            margin-right: -50%;
+        }
+        .button-sekunder {
+            background-color: transparent;
+            border-color: #dbdbdb;
+            color: #0b9b6b;
+        }
+        .button-sekunder:hover {
+            background-color: #0b9b6b;
+            border-color: #dbdbdb;
+            color: #fff;
+        }
+        .cover {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100%; /* Ensure this element has full height */
+            background-size: contain;
+            background-repeat: no-repeat;
+        }
+        .navbar-brand img {
+            max-height: 65px;
+        }
+        .rektor-text p {
+            text-align: justify;
+            margin-bottom: 1em;
+        }
+        .rektor-text {
+            margin-left: 100px; /* Adjust the margin as needed */
+            margin-top: 0px; /* Ubah sesuai kebutuhan jarak atas */
+        }
+        .logo-nav {
+            height: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!--Navigasi bar-->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container">
+            <a class="navbar-brand" href="#"><img class="logo-nav" src="images/120.png" alt="Logo"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarContent" aria-controls="navbarContent" aria-expanded="false" aria-label="Toggle navigation">
+                 <span class="navbar-toggler-icon"></span>
+            </button>  
+            <div class="collapse navbar-collapse" id="navbarContent">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Service</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#product">News</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <!--header-->
+    <section class="jumbotron jumbotron-fluid background-header">
+        <div class="container-fluid text-center">
+            <h1 class="display-3" style="color:aliceblue; font-weight: bold;">Sistem Informasi Akademik Data Mahasiswa</h1>
+            <a href="login.php" class="btn button-primer btn-lg" role="button">Login</a>
+        </div>
+    </section>
+
+    <!--service-->
+    <section id="services" class="service-style container-fluid container-fluid-max">
+        <div class="row text-center">
+            <div class="col-12 pb-4">
+                <h2 class="display-4 text-center mb-5" style="margin-top: 4rem!important;">FASILITAS & LAYANAN</h2>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x text-green"></i>
+                    <i class="fas fa-list-ol fa-stack-1x text-white"></i>
+                </span>
+                <h3>Data Akademik Mahasiswa</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x text-green"></i>
+                    <i class="fas fa-laptop-code fa-stack-1x text-white"></i>
+                </span>
+                <h3>Survey Kepuasan Layanan</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x text-green"></i>
+                    <i class="fas fa-money-bill fa-stack-1x text-white"></i>
+                </span>
+                <h3>Keuangan Mahasiswa</h3>
+            </div>
+            <div class="col-12 col-sm-6 col-lg-3">
+                <span class="fa-stack fa-2x">
+                    <i class="fas fa-circle fa-stack-2x text-green"></i>
+                    <i class="fas fa-chart-line fa-stack-1x text-white"></i>
+                </span>
+                <h3>Layanan Laporan Mahasiswa</h3>
+            </div>
+        </div>
+    </section>
+
+    <!--produk-->
+    <section id="product" class="container">
+        <div class="row text-center">
+            <div class="col-12 pb-4">
+                <h2 class="display-4 text-center mb-5" style="margin-top: 4rem!important;">Berita Terkini</h2>
+            </div>
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" style="max-height:400px" src="images/news1.png" alt="Product 1">
+                    <div class="card-body">
+                        <h4 class="card-title">Info Lowongan Pekerjaan: Full Stack Developer</h4>
+                        <p class="card-text">Kami mencari Full Stack Developer yang berpengalaman di front-end dan back-end. Bergabunglah dengan tim kami untuk mengembangkan aplikasi web inovatif!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn button-sekunder">Lihat Detail &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" style="max-height:400px" src="images/news2.png" alt="Product 2">
+                    <div class="card-body">
+                        <h4 class="card-title">Selamat & Sukses Atas Pembukaan Program Studi Baru: S1-Sains Data</h4>
+                        <p class="card-text">Selamat atas pembukaan Program Studi baru S1-Sains Data. Semoga sukses dalam mencetak ahli data yang handal dan inovatif!</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn button-sekunder">Lihat Detail &raquo;</a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-4 mb-4">
+                <div class="card">
+                    <img class="card-img-top" style="max-height:400px" src="images/news3.png" alt="Product 3">
+                    <div class="card-body">
+                        <h4 class="card-title">Penerimaan Mahasiswa Baru: Di UPNVJ Seperti Mimpi yang Jadi Kenyataan</h4>
+                        <p class="card-text">Proses Penerimaan Mahasiswa Baru Jalur Ujian Tulis Berbasis Komputer - Seleksi Nasional Berdasarkan Prestasi (UTBK-SNBT) 2024 sudah memasuki tahap pengumuman sejak kemarin, Kamis 13 Juni 2024.</p>
+                    </div>
+                    <div class="card-footer">
+                        <a href="#" class="btn button-sekunder">Lihat Detail &raquo;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--about-->
+    <section id="about" class="bg-light">
+        <div class="container-fluid">
+            <h2 class="display-4 text-center mb-5" style="margin-top: 5rem!important;">Tentang kami</h2>  
+            <div class="row no-gutters">
+                <!--gambar & text pertama-->
+                <div class="col-12 col-md-6">
+                    <div style="padding-bottom: 30px; padding-left: 100px; padding-right: 5px;" class="rektor-text text-right">
+                        <h3 class="display-5 text-center text-green mt-3 mb-3">Sambutan Rektor UPNVJ</h3>
+                        <p>
+                            Prinsip dasar UPN Veteran Jakarta sendiri ialah pengembangan ilmu pengetahuan dan teknologi dilandasi nilai universal dan objektif dalam mencapai kebenaran ilmiah; penyelenggaraan tridarma perguruan tinggi dilandasi keimanan, kebebasan, dan tanggung jawab akademik serta Sesanti Widya Mwat Yasa; dan peningkatan tata kelola UPN Veteran Jakarta yang baik dicirikan dengan melaksanakan manajemen mandiri, modern, dan berkelanjutan. UPN Veteran Jakarta merupakan perguruan tinggi yang memiliki ciri khas Bela Negara.
+                        </p>
+                        <p>
+                            UPNVJ berlokasi di Ibu Kota Jakarta, fakultas-fakultas yang berkompetensi tinggi, kegiatan penelitian dan pengabdian masyarakat yang semakin dirasakan manfaatnya oleh stakeholder-nya, perpustakaan yang lengkap, prasarana dan laboratorium, perkembangan teknologi informasi yang cukup memadai, alumni dengan posisi pekerjaan yang baik di beberapa Kementerian, perusahaan swasta dan wiraswasta.
+                        </p>
+                        <p>
+                            Potensi-potensi tersebut tidak ada artinya jika tidak dilandasi dengan visi, misi dan tujuan serta sasaran akademik yang kuat. Untuk itu, kami berusaha untuk selalu berkomitmen dalam mewujudkan UPNVJ sebagai Universitas Negeri yang berdaya saing tinggi dengan beridentitas Bela Negara.
+                        </p>     
+                        <p style="text-align: end;">
+                            -Anter Venus
+                        </p>
+                    </div>
+                </div>
+                <div class="col-12 col-md-6">
+                    <div class="cover" style="background-image: url('images/rektor.png'); height: 500px; background-position: center;"></div>
+                </div>
+            </div>    
+        </div>
+    </section>
+
+    <footer class="bg-dark">
+        <div class="col-lg-12" style="padding:10px">
+            <div style="text-align: center;">
+                <p></p>
+                <a href="#" class="text-light" style="padding:5px"><i class="fab fa-facebook"></i></a>
+                <a href="#" class="text-light" style="padding:5px"><i class="fab fa-twitter"></i></a>
+                <a href="#" class="text-light" style="padding:5px"><i class="fab fa-instagram"></i></a>
+            </div>
+            <p class="text-center text-secondary">Copyright &copy UPNVJ 2024</p>
+        </div>
+    </footer>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+po0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
